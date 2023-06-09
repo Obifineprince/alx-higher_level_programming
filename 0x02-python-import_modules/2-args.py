@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 import sys
 
 
@@ -12,4 +11,3 @@ def print_arguments(args):
 
 if __name__ == "__main__":
     print_arguments(sys.argv)
-
