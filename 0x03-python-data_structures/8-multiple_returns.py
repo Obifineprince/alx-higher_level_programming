@@ -6,4 +6,3 @@ def multiple_returns(sentence):
         first_character = sentence[0]
 
     return (len(sentence), first_character)
-
