@@ -81,4 +81,11 @@ class Rectangle:
         """
         Returns a string representation of the rectangle
         """
-        return "Rectangle({}, {})".format(self.__width, self.__height
+        return "Rectangle({}, {})".format(self.__width, self.__height)
+
+    def __del__(self):
+        """
+        Prints a message when the rectangle is deleted
+        """
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
