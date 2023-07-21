@@ -1,19 +1,17 @@
 #!/usr/bin/python3
 """
-File: 1-my_list.py
-Desc: This file contains one class; MyList
+File: 2-is_same_class.py
+Desc: This module has one function; is_same_class
 Author: Obi Ifeanyi
-Date Created: 20 July 2023
+Date Created: 21 July 2023
 """
 
 
-class MyList(list):
+def is_same_class(obj, a_class):
     """
-    Represents the MyList class.
+    Returns true if object is exactly an instance of
+    specified class, otherwise False
     """
-
-    def print_sorted(self):
-        """
-        Prints the sorted version of the list.
-        """
-        print(sorted(self))
+    if type(obj) == a_class:
+        return True
+    return False
